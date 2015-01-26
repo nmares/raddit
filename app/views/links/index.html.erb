@@ -17,9 +17,16 @@
     			Downvote
     		<%= link.get_downvotes.size %>
     	<% end %>
+
+      <%= link_to 'Comment', link, class: 'btn btn-default btn-sm' %> 
    </div>
 	</div>
+  <h5 class='comments_title'>
+    <%= link.comments.count %> Comments
+  </h5>
 <% end %>
+
+
 
 
 
